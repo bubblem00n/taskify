@@ -59,20 +59,24 @@
     flex-direction: column;
     width: 47.5%;
     padding: 15px;
-    background-color: rgb(50, 205, 84);
+    background-color: rgba(51, 129, 69, 0.719);
+
+    transition: .2s;
+  }
+
+  .remove {
+    background-color: rgb(235, 103, 80, 0.719);
   }
   
   .dragactive {
-    background-color: rgb(0, 236, 63);
+    background-color: rgb(55, 83, 64);
   }
   
   .dragcomplete {
-    background-color: rgb(255, 38, 0);
+    background-color: rgb(170, 46, 27);
   }
   
-  .remove {
-    background-color: rgb(235, 103, 80);
-  }
+
   
   .todos__heading {
     font-size: 30px;
@@ -113,6 +117,10 @@
     margin-left: 10px;
     font-size: 25px;
     cursor: pointer;
+  }
+
+  .marked{
+    text-decoration: line-through;
   }
   
   @media (max-width: 1100px) {
